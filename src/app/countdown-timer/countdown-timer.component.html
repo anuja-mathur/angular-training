@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 my-5 pb-5">
+            <h2 class="mb-3 mb-md-0 text-center">
+                Countdown Time with Input/Ouput
+            </h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <app-display-time (timerPaused)="parentTimerPaused = $event" (timerLog)="parentTimerLog = $event" [timer]="parentTimer" [timerRunning]="parentTimerStatus"></app-display-time>
+        </div>
+        <div class="col-12 col-md-6">
+            <app-add-time (timerAdded)="parentTimer = $event" (timerStatus)="parentTimerStatus = $event"  [logList]="parentTimerLog"></app-add-time>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6">
+            <app-log-time [logList]="parentTimerLog"></app-log-time>
+        </div>
+        <div class="col-12 col-md-6">
+            <app-click-count [logList]="parentTimerLog"></app-click-count>
+        </div>
+    </div>
+</div>

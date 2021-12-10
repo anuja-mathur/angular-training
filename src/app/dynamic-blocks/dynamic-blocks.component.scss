@@ -1,0 +1,16 @@
+.block-row {
+    .block-col {
+        max-width: 220px;
+        .block {
+            width: 200px;
+            height: 200px;
+            justify-content: center; 
+            align-items: center;
+            display: flex;
+            background: #fff;
+            border-radius: 6px;
+            position: relative;
+            box-shadow: 0 2px 3px rgb(0 0 0 / 20%);
+        }
+    }
+}

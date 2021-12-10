@@ -1,0 +1,30 @@
+.breadcrumb{
+    .breadcrumb-item{
+        a{
+            color: #000;
+        }
+    }
+}
+.product-detail{
+    .product-detail__img{
+        padding: 30px;
+        background: #fff;
+        border-radius: 6px;
+        position: relative;
+        box-shadow: 0 2px 3px rgb(0 0 0 / 20%);
+    }
+    .product-detail__description{
+        h3{
+            font-size: 1.4em;
+            line-height: 1.5;
+        }
+        .product-detail__price{
+            font-size: 1.5em;
+            small{
+                margin-left: 3px;
+                color: #747d89;
+                font-size: 0.5em;
+            }
+        }
+    }
+}

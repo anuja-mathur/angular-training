@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-12">
+        <label class="mb-3" for="timer-limit"><b>Enter Timer Limit</b></label>
+    </div>
+    <div class="col-12">
+        <input type="number" id="timer-limit" class="form-control form-control-lg" [(ngModel)]="timer" (ngModelChange)="onInputChange($event)">
+    </div>
+    <div class="col-6 mt-5">
+        <button class="btn btn-success w-100 d-block" (click)="startTimer()">Start/Pause</button>
+    </div>
+    <div class="col-6 mt-5">
+        <button class="btn btn-danger w-100 d-block" (click)="resetTimer()">Reset</button>
+    </div>
+</div>
+
+<ul class="list-unstyled mt-3" *ngIf="logList">
+    <ng-container *ngFor="let item of logList">
+        <li *ngIf="item.status=='Paused'">{{ item.status }} at {{ item.count }}</li>
+    </ng-container>
+</ul>

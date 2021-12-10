@@ -1,0 +1,12 @@
+table {
+    thead {
+        tr {
+            font-weight: bold;
+            th {
+                &:not(:first-of-type) {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
